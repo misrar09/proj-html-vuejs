@@ -37,12 +37,16 @@ export default {
 </script>
 
 <template>
+	<AppHeader />
 	<main>
+		<AppMain />
 		<AppComponent />
 
 		<button class="btn btn-primary">Primary button</button>
 	</main>
+	<AppFooter />
 </template>
+
 
 <style lang="scss">
 // importo il foglio di stile generale dell'applicazione, non-scoped
