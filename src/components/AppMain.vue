@@ -55,11 +55,12 @@ export default {
 .jumbotron {
     height: 30rem;
     width: 100vw;
-    background-image: linear-gradient(to left, transparent, transparent, black, black), url(../assets/img/slider82x-scaled.jpg);
+    background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/slider82x-scaled.jpg);
     background-size: 96%;
     position: relative;
 
 }
+
 
 .jumbo_left {
     margin: 5rem 0;
