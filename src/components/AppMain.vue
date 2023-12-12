@@ -32,7 +32,7 @@ export default {
 
                 <button class="visit_yt_btn"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
                     channel</button>
-                <button class="call_to_act">Buy Avada today</button>
+                <button class="call_to_act">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
                 <button class="play_btn"><i class="fa-solid fa-play"></i></button>
                 <button class="prebuilts"><i class="fa-solid fa-mountain"><br><span>Prebuilts</span></i></button>
                 <button class="buy_now"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"><br><span>Buy
@@ -105,6 +105,10 @@ p {
     border-radius: 5rem;
     background-color: black;
     color: white;
+
+    i {
+        padding-left: 0.5rem;
+    }
 }
 
 .play_btn {
