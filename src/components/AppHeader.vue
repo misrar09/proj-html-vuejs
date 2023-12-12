@@ -4,6 +4,11 @@ import register from "../debug" //per debuggare il componente da console
 
 export default {
     name: "AppHeader",
+    props: {
+
+        navBarLinks: Array,
+    },
+
     data() {
         return {
             store
@@ -28,12 +33,7 @@ export default {
                 <img src="../assets/img/logo-200x34.png" alt="">
             </div>
             <div class="col navbar d-flex ">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Vedeos</a>
-                <a href="#">Blog</a>
-                <a href="#">Store</a>
+                <a v-for="navLink in navBarLinks" :href="navLink.link">{{ navLink.text }}</a>
                 <button class="store_new_btn" type="button">New</button>
                 <button class="Schedule_btn" type="button">Schedule a workout</button>
                 <i class="fa-solid fa-cart-shopping"></i>

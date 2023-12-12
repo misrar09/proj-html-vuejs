@@ -16,7 +16,27 @@ export default {
 	},
 	data() {
 		return {
-			store
+			store,
+			navLinks: [
+				{
+					text: "Home", link: "#"
+				},
+				{
+					text: "Services", link: "#"
+				},
+				{
+					text: "About", link: "#"
+				},
+				{
+					text: "Videos", link: "#"
+				},
+				{
+					text: "Blog", link: "#"
+				},
+				{
+					text: "Store", link: "#"
+				},
+			]
 		}
 	},
 	mounted() {
@@ -37,11 +57,15 @@ export default {
 </script>
 
 <template>
-	<AppHeader />
+	<header>
+		<AppHeader :navBarLinks="navLinks" />
+	</header>
 	<main>
 		<AppMain />
 	</main>
-	<AppFooter />
+	<footer>
+		<AppFooter />
+	</footer>
 </template>
 
 
@@ -54,8 +78,13 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di App.vue
-main {
-	padding: 1rem;
+header {
+	height: 4rem;
+	background-color: rgb(27, 0, 0);
+	padding-top: 0.4rem;
 }
+
+main {}
+
+footer {}
 </style>

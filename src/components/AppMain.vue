@@ -22,7 +22,19 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="container">
+        <section class=" row jumbotron">
+            <h6>Certified fitness professionals</h6>
+        </section>
+        <section class=" row services"></section>
+        <section class=" row online_advice"></section>
+        <section class=" row mailing_list"></section>
+        <section class=" row information"></section>
+        <section class=" row articles"></section>
+        <section class=" row call_to_action"></section>
+        <section class=" row other_info"></section>
+        <section class=" row workout_of_the_day"></section>
+
 
     </div>
 </template>
