@@ -22,8 +22,25 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>Sono un componente!</h1>
+    <div class="header container">
+        <div class="row align-items-center">
+            <div class="col">
+                <img src="../assets/img/logo-200x34.png" alt="">
+            </div>
+            <div class="col navbar d-flex ">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Vedeos</a>
+                <a href="#">Blog</a>
+                <a href="#">Store</a>
+                <button class="store_new_btn" type="button">New</button>
+                <button class="Schedule_btn" type="button">Schedule a workout</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+        </div>
     </div>
 </template>
 
@@ -31,5 +48,35 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di AppComponent
+.navbar {
+    margin-right: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: grey;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.store_new_btn {
+    background-color: yellow;
+    height: 1.25rem;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+    margin-left: -1.2rem;
+
+}
+
+.Schedule_btn {
+    border-radius: 1rem;
+    border: none;
+    font-size: 0.75rem;
+    height: 2.2rem;
+    width: 9rem;
+    background-color: #4154ff;
+    color: white;
+}
 </style>

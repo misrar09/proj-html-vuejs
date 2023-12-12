@@ -40,9 +40,6 @@ export default {
 	<AppHeader />
 	<main>
 		<AppMain />
-		<AppComponent />
-
-		<button class="btn btn-primary">Primary button</button>
 	</main>
 	<AppFooter />
 </template>
