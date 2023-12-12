@@ -4,6 +4,9 @@ import register from "../debug" //per debuggare il componente da console
 
 export default {
     name: "AppFooter",
+    props: {
+        postsLinkList: Array,
+    },
     data() {
         return {
             store
@@ -40,24 +43,8 @@ export default {
             <div class="col text-center">
                 <h6>RECENT POSTS</h6>
                 <ul class="pt-4">
-                    <li>
-                        <a href="#">>The best protein shake</a>
-                    </li>
-
-                    <li>
-                        <a href="#">>Ultimate cardio workout</a>
-                    </li>
-
-                    <li>
-                        <a href="#">>New juices available now</a>
-                    </li>
-
-                    <li>
-                        <a href="#">>Tips to find trainng partners</a>
-                    </li>
-
-                    <li>
-                        <a href="#">>20 best healthy recipes</a>
+                    <li v-for="postLink in postsLinkList">
+                        <a href="postLink.link">{{ postLink.text }}</a>
                     </li>
                 </ul>
 

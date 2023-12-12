@@ -36,6 +36,25 @@ export default {
 				{
 					text: "Store", link: "#"
 				},
+			],
+
+			postsLinks: [
+				{
+					text: ">The best protein shake", link: "#"
+				},
+				{
+					text: ">Ultimate cardio workout", link: "#"
+				},
+				{
+					text: ">New juices available now", link: "#"
+				},
+				{
+					text: ">Tips to find trainng partners", link: "#"
+				},
+				{
+					text: ">20 best healthy recipes", link: "#"
+				},
+
 			]
 		}
 	},
@@ -64,7 +83,7 @@ export default {
 		<AppMain />
 	</main>
 	<footer>
-		<AppFooter />
+		<AppFooter :postsLinkList="postsLinks" />
 	</footer>
 </template>
 
