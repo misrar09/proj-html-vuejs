@@ -22,8 +22,63 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="container sec_1">
+        <div class="row">
+            <div class="col text-center">
+                <img src="../assets/img/logo-200x34.png" alt="logo">
+                <p class="pt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur veniam id quaerat sit
+                    fugit omnis
+                    maiores rem, doloribus perspiciatis facilis</p>
+                <div class="pt-4">
+                    <i class="px-2 fa-brands fa-facebook-f"></i>
+                    <i class="px-2 fa-brands fa-x-twitter"></i>
+                    <i class="px-2 fa-brands fa-youtube"></i>
+                    <i class="px-2 fa-brands fa-instagram"></i>
+                    <i class="px-2 fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="col text-center">
+                <h6>RECENT POSTS</h6>
+                <ul class="pt-4">
+                    <li>
+                        <a href="#">>The best protein shake</a>
+                    </li>
 
+                    <li>
+                        <a href="#">>Ultimate cardio workout</a>
+                    </li>
+
+                    <li>
+                        <a href="#">>New juices available now</a>
+                    </li>
+
+                    <li>
+                        <a href="#">>Tips to find trainng partners</a>
+                    </li>
+
+                    <li>
+                        <a href="#">>20 best healthy recipes</a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col text-center">
+                <h6>CONTACT INFORMATION</h6>
+                <p class="pt-4"> 4746 Tipple Road Michigan 48448</p>
+                <h6 class="pt-2">Mobile: 1.800.000.0000</h6>
+                <h6>Email: info@your-company.com</h6>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+    <div class=" sec_2 text-center">
+        <p>@Copyright 2023 - 2025 | Avade theme by <strong>ThemeFusion</strong>| All rights reserved | Powered
+            by
+            <strong>Boolean</strong>
+        </p>
     </div>
 </template>
 
@@ -31,5 +86,25 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di AppComponent
+
+h6 {
+    font-weight: bold;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-bottom: 0.5rem;
+
+}
+
+i {
+    color: red;
+}
+
+.sec_2 {
+    margin: 2rem 0;
+}
 </style>
