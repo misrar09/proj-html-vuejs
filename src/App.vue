@@ -99,7 +99,6 @@ export default {
 
 header {
 	height: 4rem;
-	background-color: rgb(27, 0, 0);
 	padding-top: 0.4rem;
 }
 
