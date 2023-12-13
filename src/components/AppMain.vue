@@ -22,27 +22,30 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <section class=" row jumbotron">
-            <div class="col jumbo_left">
-                <h6>Certified fitness professionals</h6>
-                <h1>Take control of your health</h1>
-                <i class="fa-solid fa-arrow-trend-up"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Corrupti reprehenderit ulla</p>
+    <section class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 jumbo_left">
+                    <h6>Certified fitness professionals</h6>
+                    <h1>Take control of your health</h1>
+                    <img src="../assets/img/zigzag yb.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Corrupti reprehenderit ulla</p>
 
-                <button class="visit_yt_btn"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
-                    channel</button>
-                <button class="call_to_act">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
-                <button class="play_btn"><i class="fa-solid fa-play"></i></button>
-                <button class="prebuilts"><i class="fa-solid fa-mountain"><br><span>Prebuilts</span></i></button>
-                <button class="buy_now"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"><br><span>Buy
-                            Now</span></i></button>
+                    <button class="visit_yt_btn"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
+                        channel</button>
+                    <button class="call_to_act">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="play_btn"><i class="fa-solid fa-play"></i></button>
+                    <div class="side_btn">
+                        <button class="prebuilts"><i class="fa-solid fa-mountain"><br><span>Prebuilts</span></i></button>
+                        <button class="buy_now"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"><br><span>Buy
+                                    Now</span></i></button>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <section class="services">
         <div class="container">
-
             <div class="cards d-flex justify-content-between  ">
                 <div class="card">
                     <img src="../assets/img/service6-2x.jpg" alt="service6">
@@ -68,26 +71,29 @@ export default {
                 <div class="qoute_author">
                     <p class="text-center">
                         <img src="../assets/img/avatar-1-2x.jpg" alt="">
-                        <span><strong>Brad Johnson</strong></span>
-                        <span>Las Vegas</span>
+                        <span class="text-white"><strong>Brad Johnson</strong></span>
+                        <span class="lasvegas">Las Vegas</span>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class=" row online_advice">
-        <div class="col-6 img_wrapper">
-            <img src="../assets/img/service15-2x.jpg" alt="image">
-            <button class="play_btn2"><i class="fa-solid fa-play"></i></button>
-        </div>
-        <div class="col-6 text-wrapper">
-            <h5>Tune up your workout</h5>
-            <h2>The best health & fitness advice online</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt blanditiis modi! Voluptates amet
-                deleniti magni</p>
-            <button class="visit_yt_btn_red"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
-                channel</button>
+    <section class="online_advice">
+        <div class="row">
+
+            <div class="col-6 img_wrapper">
+                <img src="../assets/img/service15-2x.jpg" alt="image">
+                <button class="play_btn2"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class="col-6 text-wrapper">
+                <h5>Tune up your workout</h5>
+                <h2>The best health & fitness advice online</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt blanditiis modi! Voluptates amet
+                    deleniti magni</p>
+                <button class="visit_yt_btn_red"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
+                    channel</button>
+            </div>
         </div>
 
     </section>
@@ -246,7 +252,7 @@ export default {
             <button class="play_btn3"><i class="fa-solid fa-play"></i></button>
             <h1>Crossfit workout of the day</h1>
             <h2>November 15th, 2019</h2>
-            <h6>View all videos<i class="fa-solid fa-arrow-right"></i></h6>
+            <h6>View all videos<i class="ps-2 fa-solid fa-arrow-right"></i></h6>
         </div>
 
     </section>
@@ -257,10 +263,12 @@ export default {
 
 <style scoped lang="scss">
 .jumbotron {
-    height: 30rem;
-    width: 100vw;
+    height: 35rem;
+    margin-bottom: 5rem;
+    /* width: 100vw */
+
     background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/slider82x-scaled.jpg);
-    background-size: 96%;
+    background-size: cover;
     position: relative;
 
 }
@@ -271,7 +279,7 @@ export default {
 
     h1 {
         padding: 1rem 0;
-        font-size: 3.5rem;
+        font-size: 4rem;
         color: white;
     }
 
@@ -285,16 +293,17 @@ export default {
     p {
         padding: 1rem 0;
         color: grey;
+        font-size: 1.5rem;
     }
 
-    .fa-arrow-trend-up {
-        font-size: 2rem;
-        color: yellow;
+    img {
+        width: 5rem;
+
     }
 
     .visit_yt_btn {
         width: 18rem;
-        height: 3rem;
+        height: 3.5rem;
         border: none;
         border-radius: 5rem;
         background-color: #4154ff;
@@ -304,7 +313,7 @@ export default {
 
     .call_to_act {
         width: 12rem;
-        height: 3rem;
+        height: 3.5rem;
         border: 1px solid gray;
         border-radius: 5rem;
         background-color: black;
@@ -314,48 +323,47 @@ export default {
             padding-left: 0.5rem;
         }
     }
-}
 
-// importo variabili
-// @use './styles/partials/variables' as *;
+    .play_btn {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100%;
+        color: #4154ff;
+        border: none;
+        position: absolute;
+        right: 13rem;
+        top: 11rem;
+    }
 
 
+    .prebuilts,
+    .buy_now {
+        width: 4rem;
+        height: 4rem;
+        border: none;
+        position: fixed;
+        border-radius: 0.5rem;
+        right: 1rem;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        z-index: 1;
 
-.play_btn {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100%;
-    color: #4154ff;
-    border: none;
-    position: absolute;
-    right: 13rem;
-    top: 11rem;
-}
+        span {
+            font-size: 0.4rem;
+        }
+    }
 
-.prebuilts,
-.buy_now {
-    width: 3.5rem;
-    height: 3.5rem;
-    border: none;
-    position: absolute;
-    border-radius: 0.5rem;
-    right: 3.8rem;
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    .prebuilts {
+        top: 7.5rem;
+    }
 
-    span {
-        font-size: 0.4rem;
+    .buy_now {
+        top: 12rem;
     }
 }
 
-.prebuilts {
-    top: 4rem;
-}
 
-.buy_now {
 
-    top: 8rem;
-}
 
 
 /* SERVICES SECTION STYLE */
@@ -433,7 +441,9 @@ export default {
 
             span {
                 padding: 0.5rem;
+                color: rgb(197, 197, 197);
             }
+
 
         }
     }
@@ -454,7 +464,7 @@ export default {
         position: relative;
 
         img {
-            width: 100%;
+            width: 90%;
             position: absolute;
             top: -3rem;
             border-radius: 5px 5px 40px 0;
@@ -477,26 +487,30 @@ export default {
     }
 
     .text-wrapper {
-        padding: 3rem;
+
+        padding: 6rem;
 
         h2 {
             color: black;
-            font-size: 3rem;
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
         }
 
         h5 {
             color: #4154ff;
             font-size: 1.5rem;
+            margin-bottom: 2rem;
 
         }
 
         p {
-            color: black;
+            color: gray;
+            margin-bottom: 1.5rem;
         }
 
         .visit_yt_btn_red {
             width: 18rem;
-            height: 3rem;
+            height: 3.5rem;
             border: none;
             border-radius: 5rem;
             background-color: red;
@@ -511,7 +525,8 @@ export default {
 
 
 .playlist {
-    height: 26rem;
+    height: 40rem;
+    padding-top: 5rem;
     background-color: white;
 
 
@@ -559,8 +574,8 @@ export default {
 }
 
 .mailing_list {
-    height: 35rem;
-    width: 100vw;
+    height: 45rem;
+    /* width: 100vw; */
     background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/banner1-2x.jpg);
     background-size: cover;
     background-position: right;
@@ -612,9 +627,11 @@ export default {
 }
 
 .options {
+    height: 40rem;
+
     .option_cards {
         .option_card {
-            height: 25rem;
+            height: 35rem;
             border: 4px solid #4154ff;
             color: white;
             padding: 3rem;
@@ -623,22 +640,23 @@ export default {
 
             i {
                 font-size: 4rem;
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
                 color: rgb(204, 202, 202)
             }
 
             h3 {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
 
             h4 {
                 color: yellow;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
+                margin-bottom: 4rem;
 
             }
 
             h5 {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: bold;
 
                 i {
@@ -648,6 +666,7 @@ export default {
 
             p {
                 color: rgb(189, 189, 189);
+                margin-bottom: 4rem;
             }
         }
     }
@@ -656,8 +675,8 @@ export default {
 .articles {
     background-color: white;
     color: black;
-    height: 35rem;
-    padding-top: 4rem;
+    height: 38rem;
+    padding: 4rem 0;
 
     .article_cards {
         .article_card {
@@ -688,23 +707,26 @@ export default {
 
 
 .call_to_action {
-    height: 33rem;
-    width: 100%;
+    height: 40rem;
+    /* width: 100%; */
     background-image: linear-gradient(to bottom, transparent, transparent, #0000007a, black), url(../assets/img/banner2-2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     .content {
-        padding: 10rem;
+        padding: 10rem 20rem;
         text-align: center;
 
         h1 {
             color: white;
+            font-size: 3.2rem;
         }
 
         p {
             color: gray;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         button {
@@ -720,30 +742,34 @@ export default {
 }
 
 .sponsors {
-    height: 25rem;
+    height: 30rem;
     background-color: white;
+    padding: 2rem 0;
 
     .sponsor_cards {
+
+
         .sponsor_card {
-            padding: 1.5rem;
+            padding: 2rem;
             text-align: center;
 
             img {
                 width: 9rem;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
             }
 
             p {
                 color: grey;
+                margin-bottom: 1.5rem;
             }
         }
     }
 }
 
 .workout_of_the_day {
-    height: 28rem;
+    height: 35rem;
     background-image: linear-gradient(to bottom right, rgba(0, 13, 128, 0.329), rgba(2, 2, 95, 0.479), rgba(255, 0, 0, 0.308)), url(../assets/img/banner14-2x.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -755,11 +781,13 @@ export default {
 
         h1 {
             color: white;
+            font-size: 3rem;
 
         }
 
         h2 {
             color: yellow;
+            margin-bottom: 1rem;
         }
 
         h6 {

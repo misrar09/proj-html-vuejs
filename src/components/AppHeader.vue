@@ -38,7 +38,6 @@ export default {
                 <button class="Schedule_btn" type="button">Schedule a workout</button>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
-
             </div>
         </div>
     </div>
