@@ -42,7 +42,7 @@ export default {
             </div>
             <div class="col text-center">
                 <h6>RECENT POSTS</h6>
-                <ul class="pt-4">
+                <ul class="pt-4 pe-4">
                     <li v-for="postLink in postsLinkList">
                         <a href="postLink.link">{{ postLink.text }}</a>
                     </li>
@@ -73,25 +73,43 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
+.sec_1 {
+    height: 20rem;
+    margin: 8rem;
 
-h6 {
-    font-weight: bold;
+    h6 {
+        font-weight: bold;
+        color: white;
+        font-size: 1.5rem;
+
+    }
+
+    p {
+        color: white;
+    }
+
+    ul {}
+
+    a,
+    li {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        padding: 0.8rem;
+    }
+
+    i {
+        color: #FF414B;
+    }
 }
 
-a,
-li {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    padding-bottom: 0.5rem;
-
-}
-
-i {
-    color: red;
-}
 
 .sec_2 {
     margin: 2rem 0;
+    color: gray;
+
+    strong {
+        color: white;
+    }
 }
 </style>
