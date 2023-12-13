@@ -37,8 +37,7 @@ export default {
                     <button class="play_btn"><i class="fa-solid fa-play"></i></button>
                     <div class="side_btn">
                         <button class="prebuilts"><i class="fa-solid fa-mountain"><br><span>Prebuilts</span></i></button>
-                        <button class="buy_now"><i class="fa-solid fa-cart-shopping fa-flip-horizontal"><br><span>Buy
-                                    Now</span></i></button>
+                        <button class="buy_now"><i class="fa-solid fa-cart-shopping"><br><span>Buy Now</span></i></button>
                     </div>
                 </div>
             </div>
@@ -284,7 +283,7 @@ export default {
     }
 
     h6 {
-        color: red;
+        color: #FF414B;
         font-size: 1.3rem;
     }
 
@@ -309,6 +308,10 @@ export default {
         background-color: #4154ff;
         color: white;
         margin-right: 0.8rem;
+
+        &:hover {
+            background-color: #FF414B;
+        }
     }
 
     .call_to_act {
@@ -318,6 +321,11 @@ export default {
         border-radius: 5rem;
         background-color: black;
         color: white;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
 
         i {
             padding-left: 0.5rem;
@@ -333,6 +341,10 @@ export default {
         position: absolute;
         right: 13rem;
         top: 11rem;
+
+        &:hover {
+            color: #FF414B;
+        }
     }
 
 
@@ -368,7 +380,7 @@ export default {
 
 /* SERVICES SECTION STYLE */
 .services {
-    background-image: linear-gradient(to bottom right, blue, red);
+    background-image: linear-gradient(to bottom right, blue, #FF414B);
     margin-top: 1.5rem;
     height: 48rem;
 
@@ -387,6 +399,11 @@ export default {
                 width: 100%;
                 height: 100%;
                 border-radius: 5px 5px 40px 0;
+                transition: transform 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
 
             &::before {
@@ -400,6 +417,9 @@ export default {
                 z-index: 1;
                 border-radius: 5px 5px 40px 0;
             }
+
+
+
 
             h4 {
                 color: white;
@@ -482,6 +502,10 @@ export default {
             top: 50%;
             transform: translate(-50%, -50%);
 
+            &:hover {
+                color: #FF414B;
+            }
+
         }
 
     }
@@ -516,10 +540,12 @@ export default {
             background-color: red;
             color: white;
             margin-right: 0.8rem;
+
+            &:hover {
+                background-color: #FF414B;
+            }
         }
     }
-
-
 
 }
 
@@ -558,6 +584,10 @@ export default {
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            &:hover {
+                color: #FF414B;
+            }
         }
 
         h6 {
@@ -596,8 +626,9 @@ export default {
     }
 
     h6 {
-        color: red;
+        color: #FF414B;
         font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
 
 
@@ -605,23 +636,30 @@ export default {
     p {
         padding: 1rem 0;
         color: grey;
+        font-size: 1.5rem;
     }
 
     .subscribe {
-        width: 12rem;
-        height: 3rem;
+        width: 14rem;
+        height: 3.5rem;
         border: none;
         border-radius: 5rem;
         background-color: #4154ff;
         color: white;
         margin-right: 0.8rem;
+
+        &:hover {
+            background-color: #FF414B;
+        }
     }
 
     input {
-        width: 28rem;
-        height: 3rem;
+        width: 30rem;
+        height: 3.5rem;
         border-radius: 5rem;
         margin-right: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 
     }
 }
@@ -637,6 +675,11 @@ export default {
             padding: 3rem;
             text-align: center;
             margin-bottom: 4rem;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             i {
                 font-size: 4rem;
@@ -736,6 +779,10 @@ export default {
             color: white;
             border-radius: 5rem;
             border: none;
+
+            &:hover {
+                background-color: #FF414B;
+            }
         }
     }
 
@@ -802,6 +849,10 @@ export default {
             background-color: white;
             border: none;
             margin-bottom: 1rem;
+
+            &:hover {
+                color: #FF414B;
+            }
 
             /*             position: absolute;
             left: 50%;
