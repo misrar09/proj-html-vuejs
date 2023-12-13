@@ -190,16 +190,70 @@ export default {
                     <h6>New juices available now</h6>
                     <p><span>By</span>admin <span>| November 26th, 2019 |</span> Gym</p>
                 </div>
-
             </div>
+        </div>
+    </section>
+    <section class="call_to_action">
+        <div class="content">
+            <h1>"I've failed over and over again in my life. And that is why I succeed."</h1>
+            <!-- todo waves -->
+            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis, mollitia tenetur
+                recusandae hic
+                neque
+                earum cum repellat perferendis quaerat? Necessitatibus dolorem porro iusto officiis.</p>
+            <button class="mt-2 call_to_act">Buy Avada today <i class=" ps-2 fa-solid fa-angle-right"></i></button>
 
+        </div>
+    </section>
+    <section class="sponsors">
+        <div class="container">
+
+            <div class="row sponsor_cards pt-5">
+                <div class="col-3 sponsor_card">
+                    <img src="../assets/img/sponsor-1-2x.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        amet
+                        accusamus magnam itaque ducimus.!</p>
+                    <h6>Visit Yoga Studio <i class="fa-solid fa-angle-right"></i></h6>
+                </div>
+                <div class="col-3 sponsor_card">
+                    <img src="../assets/img/sponsor-2-2x.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        amet
+                        accusamus magnam itaque ducimus.!</p>
+                    <h6>Visit Yoga Studio <i class="fa-solid fa-angle-right"></i></h6>
+                </div>
+                <div class="col-3 sponsor_card">
+                    <img src="../assets/img/sponsor-3-2x.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        amet
+                        accusamus magnam itaque ducimus.!</p>
+                    <h6>Visit Yoga Studio <i class="fa-solid fa-angle-right"></i></h6>
+                </div>
+                <div class="col-3 sponsor_card">
+                    <img src="../assets/img/sponsor-4-2x.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        amet
+                        accusamus magnam itaque ducimus.!</p>
+                    <h6>Visit Yoga Studio <i class="fa-solid fa-angle-right"></i></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="workout_of_the_day">
+        <div class="wrapper">
+
+            <button class="play_btn3"><i class="fa-solid fa-play"></i></button>
+            <h1>Crossfit workout of the day</h1>
+            <h2>November 15th, 2019</h2>
+            <h6>View all videos<i class="fa-solid fa-arrow-right"></i></h6>
         </div>
 
     </section>
-    <section class=" row call_to_action"></section>
-    <section class=" row other_info"></section>
-    <section class=" row workout_of_the_day"></section>
 </template>
+
+
+
 
 <style scoped lang="scss">
 .jumbotron {
@@ -508,9 +562,11 @@ export default {
     height: 35rem;
     width: 100vw;
     background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/banner1-2x.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: right;
     background-repeat: no-repeat;
     position: relative;
+    margin-bottom: 4rem;
 
 }
 
@@ -628,5 +684,104 @@ export default {
 
         }
     }
+}
+
+
+.call_to_action {
+    height: 33rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, transparent, #0000007a, black), url(../assets/img/banner2-2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .content {
+        padding: 10rem;
+        text-align: center;
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: gray;
+        }
+
+        button {
+            width: 12rem;
+            height: 3rem;
+            background-color: #4154ff;
+            color: white;
+            border-radius: 5rem;
+            border: none;
+        }
+    }
+
+}
+
+.sponsors {
+    height: 25rem;
+    background-color: white;
+
+    .sponsor_cards {
+        .sponsor_card {
+            padding: 1.5rem;
+            text-align: center;
+
+            img {
+                width: 9rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: grey;
+            }
+        }
+    }
+}
+
+.workout_of_the_day {
+    height: 28rem;
+    background-image: linear-gradient(to bottom right, rgba(0, 13, 128, 0.329), rgba(2, 2, 95, 0.479), rgba(255, 0, 0, 0.308)), url(../assets/img/banner14-2x.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+
+    .wrapper {
+
+        padding: 7rem;
+
+        h1 {
+            color: white;
+
+        }
+
+        h2 {
+            color: yellow;
+        }
+
+        h6 {
+            color: white;
+        }
+
+        .play_btn3 {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+            color: #4154ff;
+            background-color: white;
+            border: none;
+            margin-bottom: 1rem;
+
+            /*             position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); */
+
+        }
+    }
+
 }
 </style>
