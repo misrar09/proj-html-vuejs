@@ -138,7 +138,36 @@ export default {
             </div>
         </div>
     </section>
-    <section class=" row information"></section>
+    <section class="options">
+        <div class="container">
+            <div class="row option_cards gap-5">
+                <div class="col option_card">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <h3>Team training</h3>
+                    <h4>Find a partner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit ullam consequatur, non ab
+                        voluptates! Minima obcaecati voluptatem?</p>
+                    <h5>Find a partner <i class="fa-solid fa-angle-right"></i></h5>
+                </div>
+                <div class="col option_card">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h3>Crossfit workout</h3>
+                    <h4>Push your limits</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit ullam consequatur, non ab
+                        voluptates! Minima obcaecati voluptatem?</p>
+                    <h5>Learn about Crossfit <i class="fa-solid fa-angle-right"></i></h5>
+                </div>
+                <div class="col option_card">
+                    <i class="fa-solid fa-person-half-dress"></i>
+                    <h3>Weight loss plan</h3>
+                    <h4>Shed those pounds</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit ullam consequatur, non ab
+                        voluptates! Minima obcaecati voluptatem?</p>
+                    <h5>Schedule a workout <i class="fa-solid fa-angle-right"></i></h5>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class=" row articles"></section>
     <section class=" row call_to_action"></section>
     <section class=" row other_info"></section>
@@ -252,6 +281,7 @@ export default {
 .services {
     background-image: linear-gradient(to bottom right, blue, red);
     margin-top: 1.5rem;
+    height: 48rem;
 
     div.cards {
         position: relative;
@@ -304,6 +334,7 @@ export default {
     }
 
     .qoute1 {
+
         h1 {
             text-align: center;
             padding: 1rem 5rem;
@@ -447,7 +478,7 @@ export default {
 }
 
 .mailing_list {
-    height: 40rem;
+    height: 35rem;
     width: 100vw;
     background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/banner1-2x.jpg);
     background-size: contain;
@@ -494,6 +525,47 @@ export default {
         border-radius: 5rem;
         margin-right: 1.5rem;
 
+    }
+}
+
+.options {
+    .option_cards {
+        .option_card {
+            height: 25rem;
+            border: 4px solid #4154ff;
+            color: white;
+            padding: 3rem;
+            text-align: center;
+
+            i {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+                color: rgb(204, 202, 202)
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                color: yellow;
+                font-size: 1.2rem;
+
+            }
+
+            h5 {
+                font-size: 1rem;
+                font-weight: bold;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+
+            p {
+                color: rgb(189, 189, 189);
+            }
+        }
     }
 }
 </style>
