@@ -122,7 +122,22 @@ export default {
 
         </div>
     </section>
-    <section class=" row mailing_list"></section>
+    <section class=" mailing_list">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mail_today">
+                    <h6>Join our mailing list today</h6>
+                    <h1>Insider offers & flash sales in your inbox every week.</h1>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <input type="text" placeholder="    Insert your email...*">
+                    <button class="subscribe">Subscribe</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates eius ipsum temporibus.
+                        Qui delectus, fugiat quaerat sunt molestias facilis cumque distinctio hic?</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <section class=" row information"></section>
     <section class=" row articles"></section>
     <section class=" row call_to_action"></section>
@@ -147,6 +162,7 @@ export default {
     h1 {
         padding: 1rem 0;
         font-size: 3.5rem;
+        color: white;
     }
 
     h6 {
@@ -160,39 +176,40 @@ export default {
         padding: 1rem 0;
         color: grey;
     }
+
+    .fa-arrow-trend-up {
+        font-size: 2rem;
+        color: yellow;
+    }
+
+    .visit_yt_btn {
+        width: 18rem;
+        height: 3rem;
+        border: none;
+        border-radius: 5rem;
+        background-color: #4154ff;
+        color: white;
+        margin-right: 0.8rem;
+    }
+
+    .call_to_act {
+        width: 12rem;
+        height: 3rem;
+        border: 1px solid gray;
+        border-radius: 5rem;
+        background-color: black;
+        color: white;
+
+        i {
+            padding-left: 0.5rem;
+        }
+    }
 }
 
 // importo variabili
 // @use './styles/partials/variables' as *;
 
 
-.fa-arrow-trend-up {
-    font-size: 2rem;
-    color: yellow;
-}
-
-.visit_yt_btn {
-    width: 18rem;
-    height: 3rem;
-    border: none;
-    border-radius: 5rem;
-    background-color: #4154ff;
-    color: white;
-    margin-right: 0.8rem;
-}
-
-.call_to_act {
-    width: 12rem;
-    height: 3rem;
-    border: 1px solid gray;
-    border-radius: 5rem;
-    background-color: black;
-    color: white;
-
-    i {
-        padding-left: 0.5rem;
-    }
-}
 
 .play_btn {
     width: 5rem;
@@ -291,6 +308,7 @@ export default {
             text-align: center;
             padding: 1rem 5rem;
             margin-bottom: 2rem;
+            color: white;
         }
 
         div {
@@ -399,6 +417,7 @@ export default {
 
         img {
             width: 100%;
+            border-radius: 5px 5px 40px 0;
         }
 
         .play_btn_sml {
@@ -425,5 +444,56 @@ export default {
         }
     }
 
+}
+
+.mailing_list {
+    height: 40rem;
+    width: 100vw;
+    background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/banner1-2x.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+/* JUMBTRON SECTION STYLE */
+.mail_today {
+    margin: 5rem 0;
+
+    h1 {
+        padding: 1rem 0;
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    h6 {
+        color: red;
+        font-size: 1.3rem;
+    }
+
+
+
+    p {
+        padding: 1rem 0;
+        color: grey;
+    }
+
+    .subscribe {
+        width: 12rem;
+        height: 3rem;
+        border: none;
+        border-radius: 5rem;
+        background-color: #4154ff;
+        color: white;
+        margin-right: 0.8rem;
+    }
+
+    input {
+        width: 28rem;
+        height: 3rem;
+        border-radius: 5rem;
+        margin-right: 1.5rem;
+
+    }
 }
 </style>
