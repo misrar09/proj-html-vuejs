@@ -168,7 +168,34 @@ export default {
             </div>
         </div>
     </section>
-    <section class=" row articles"></section>
+    <section class="articles">
+        <div class="container">
+            <div class="d-flex justify-content-between mb-2 pt-5">
+                <h5>Latest articles</h5>
+                <h6>Read all articles <i class="fa-solid fa-angle-right"></i></h6>
+            </div>
+            <div class="row article_cards gap-4">
+                <div class="col article_card">
+                    <img src="../assets/img/blog4-2x.jpg" alt="">
+                    <h6>The best protein shake</h6>
+                    <p><span>By</span>admin <span>| November 26th, 2019 |</span> Gym</p>
+                </div>
+                <div class="col article_card">
+                    <img src="../assets/img/blog1-2x.jpg" alt="">
+                    <h6>Ultimate cardio workout</h6>
+                    <p><span>By</span>admin <span>| November 26th, 2019 |</span> Gym</p>
+                </div>
+                <div class="col article_card">
+                    <img src="../assets/img/blog3-2x.jpg" alt="">
+                    <h6>New juices available now</h6>
+                    <p><span>By</span>admin <span>| November 26th, 2019 |</span> Gym</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     <section class=" row call_to_action"></section>
     <section class=" row other_info"></section>
     <section class=" row workout_of_the_day"></section>
@@ -536,6 +563,7 @@ export default {
             color: white;
             padding: 3rem;
             text-align: center;
+            margin-bottom: 4rem;
 
             i {
                 font-size: 4rem;
@@ -565,6 +593,39 @@ export default {
             p {
                 color: rgb(189, 189, 189);
             }
+        }
+    }
+}
+
+.articles {
+    background-color: white;
+    color: black;
+    height: 35rem;
+    padding-top: 4rem;
+
+    .article_cards {
+        .article_card {
+            line-height: 0.3rem;
+
+            img {
+                width: 100%;
+            }
+
+            h6 {
+                margin: 1rem;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            p {
+                padding-left: 1rem;
+            }
+
+            span {
+                color: gray;
+            }
+
+
         }
     }
 }
