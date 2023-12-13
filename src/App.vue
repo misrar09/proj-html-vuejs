@@ -104,5 +104,7 @@ header {
 
 main {}
 
-footer {}
+footer {
+	margin-top: 2rem;
+}
 </style>

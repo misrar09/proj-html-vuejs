@@ -76,7 +76,52 @@ export default {
         </div>
     </section>
 
-    <section class=" row online_advice"></section>
+    <section class=" row online_advice">
+        <div class="col-6 img_wrapper">
+            <img src="../assets/img/service15-2x.jpg" alt="image">
+            <button class="play_btn2"><i class="fa-solid fa-play"></i></button>
+        </div>
+        <div class="col-6 text-wrapper">
+            <h5>Tune up your workout</h5>
+            <h2>The best health & fitness advice online</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt blanditiis modi! Voluptates amet
+                deleniti magni</p>
+            <button class="visit_yt_btn_red"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
+                channel</button>
+        </div>
+
+    </section>
+    <section class="playlist">
+        <div class="container">
+            <div class="text d-flex justify-content-between mb-2 pt-5">
+                <h5>Featured Playlists</h5>
+                <h6>View all videos <i class="fa-solid fa-angle-right"></i></h6>
+            </div>
+
+            <div class="row vid_cards">
+                <div class="col vid_card">
+                    <img src="../assets/img/video2-2x.jpg" alt="">
+                    <button class="play_btn_sml"><i class="fa-solid fa-play"></i></button>
+                    <h6>Thighs & glute workout</h6>
+                    <p>Increase your mobility</p>
+                </div>
+                <div class="col vid_card">
+                    <img src="../assets/img/video7-2x.jpg" alt="">
+                    <button class="play_btn_sml"><i class="fa-solid fa-play"></i></button>
+                    <h6>Thighs & glute workout</h6>
+                    <p>Increase your mobility</p>
+                </div>
+                <div class="col vid_card">
+                    <img src="../assets/img/video9-2x.jpg" alt="">
+                    <button class="play_btn_sml"><i class="fa-solid fa-play"></i></button>
+                    <h6>Thighs & glute workout</h6>
+                    <p>Increase your mobility</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <section class=" row mailing_list"></section>
     <section class=" row information"></section>
     <section class=" row articles"></section>
@@ -263,6 +308,122 @@ export default {
         }
     }
 
+
+}
+
+
+
+
+.online_advice {
+
+    background-color: white;
+    height: 40rem;
+    position: relative;
+
+    .img_wrapper {
+        position: relative;
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: -3rem;
+            border-radius: 5px 5px 40px 0;
+        }
+
+        .play_btn2 {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+            color: #4154ff;
+            background-color: white;
+            border: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+    }
+
+    .text-wrapper {
+        padding: 3rem;
+
+        h2 {
+            color: black;
+            font-size: 3rem;
+        }
+
+        h5 {
+            color: #4154ff;
+            font-size: 1.5rem;
+
+        }
+
+        p {
+            color: black;
+        }
+
+        .visit_yt_btn_red {
+            width: 18rem;
+            height: 3rem;
+            border: none;
+            border-radius: 5rem;
+            background-color: red;
+            color: white;
+            margin-right: 0.8rem;
+        }
+    }
+
+
+
+}
+
+
+.playlist {
+    height: 26rem;
+    background-color: white;
+
+
+    .vid_cards {
+        margin-bottom: 2rem;
+    }
+
+    .vid_card {
+        /* width: 20rem; */
+        text-align: center;
+        line-height: 0.8rem;
+        position: relative;
+
+
+
+        img {
+            width: 100%;
+        }
+
+        .play_btn_sml {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            color: #4154ff;
+            background-color: white;
+            border: none;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h6 {
+            font-weight: bold;
+            padding-top: 1rem;
+        }
+
+        p {
+            color: #4154ff;
+            font-size: 0.95rem;
+        }
+    }
 
 }
 </style>
