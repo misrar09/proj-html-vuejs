@@ -27,9 +27,9 @@ export default {
 </script>
 
 <template>
-    <div class="header container">
-        <div class="row align-items-center">
-            <div class="col">
+    <div class=" container">
+        <div class=" header row align-items-center">
+            <div class="col-4">
                 <img src="../assets/img/logo-200x34.png" alt="">
             </div>
             <div class="col navbar d-flex ">
@@ -47,23 +47,40 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-.navbar {
-    margin-right: 1rem;
+.header {
+    height: 5rem;
+    width: 100%;
+    gap: 5rem;
+
 }
 
-.navbar a {
-    text-decoration: none;
-    color: grey;
 
-    &:hover {
-        color: white;
+.navbar {
+
+    i {
+        color: gray;
+
+        &:hover {
+            color: white;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: grey;
+
+        &:hover {
+            color: white;
+        }
     }
 }
 
 .store_new_btn {
     background-color: yellow;
-    height: 1.25rem;
-    font-size: 0.5rem;
+    height: 1.5rem;
+    width: 2rem;
+    font-size: 0.7rem;
     padding: 0.2rem;
     margin-left: -1.2rem;
 
@@ -73,9 +90,13 @@ export default {
     border-radius: 1rem;
     border: none;
     font-size: 0.75rem;
-    height: 2.2rem;
-    width: 9rem;
+    height: 2.5rem;
+    width: 10rem;
     background-color: #4154ff;
     color: white;
+
+    &:hover {
+        background-color: #FF414B;
+    }
 }
 </style>

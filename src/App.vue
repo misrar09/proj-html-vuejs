@@ -98,7 +98,7 @@ export default {
 // @use './styles/partials/variables' as *;
 
 header {
-	height: 4rem;
+	height: 6rem;
 	padding-top: 0.4rem;
 }
 
