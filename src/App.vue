@@ -17,50 +17,60 @@ export default {
 	data() {
 		return {
 			store,
-			navLinks: [
+			navLinks: [ /* HEADER NAVBAR ARRAY */
 				{
-					text: "Home", link: "#"
+					text: "Home",
+					link: "#"
 				},
 				{
-					text: "Services", link: "#"
+					text: "Services",
+					link: "#"
 				},
 				{
-					text: "About", link: "#"
+					text: "About",
+					link: "#"
 				},
 				{
-					text: "Videos", link: "#"
+					text: "Videos",
+					link: "#"
 				},
 				{
-					text: "Blog", link: "#"
+					text: "Blog",
+					link: "#"
 				},
 				{
-					text: "Store", link: "#"
+					text: "Store",
+					link: "#"
 				},
 			],
 
-			postsLinks: [
+			postsLinks: [ /* FOOTER POSTS LINKS ARRAY */
 				{
-					text: ">The best protein shake", link: "#"
+					text: ">The best protein shake",
+					link: "#"
 				},
 				{
-					text: ">Ultimate cardio workout", link: "#"
+					text: ">Ultimate cardio workout",
+					link: "#"
 				},
 				{
-					text: ">New juices available now", link: "#"
+					text: ">New juices available now",
+					link: "#"
 				},
 				{
-					text: ">Tips to find trainng partners", link: "#"
+					text: ">Tips to find trainng partners",
+					link: "#"
 				},
 				{
-					text: ">20 best healthy recipes", link: "#"
+					text: ">20 best healthy recipes",
+					link: "#"
 				},
+			],
 
-			]
 		}
 	},
 	mounted() {
 		this.doThings();
-
 		// axios.get("indirizzo").then(risultato => {
 		// 	console.log(risultato);
 		// }).catch(errore => {
@@ -75,6 +85,7 @@ export default {
 }
 </script>
 
+
 <template>
 	<header>
 		<AppHeader :navBarLinks="navLinks" />
@@ -86,6 +97,7 @@ export default {
 		<AppFooter :postsLinkList="postsLinks" />
 	</footer>
 </template>
+
 
 
 <style lang="scss">
@@ -101,8 +113,6 @@ header {
 	height: 6rem;
 	padding-top: 0.4rem;
 }
-
-main {}
 
 footer {
 	margin-top: 2rem;

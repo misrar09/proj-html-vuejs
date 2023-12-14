@@ -22,6 +22,7 @@ export default {
 </script>
 
 <template>
+    <!-- JUMBOTRON SECTION -->
     <section class="jumbotron">
         <div class="container">
             <div class="row">
@@ -30,7 +31,6 @@ export default {
                     <h1>Take control of your health</h1>
                     <img src="../assets/img/zigzag yb.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Corrupti reprehenderit ulla</p>
-
                     <button class="visit_yt_btn"><i class="px-2 fa-brands fa-youtube"></i> Visit my YouTube
                         channel</button>
                     <button class="call_to_act">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
@@ -43,6 +43,7 @@ export default {
             </div>
         </div>
     </section>
+    <!-- SERVICES SECTION -->
     <section class="services">
         <div class="container">
             <div class="cards d-flex justify-content-between  ">
@@ -53,16 +54,15 @@ export default {
                 </div>
                 <div class="card">
                     <img src="../assets/img/box1-2x.jpg" alt="service6">
-                    <h4>Crossfit workout</h4>
-                    <h5>Push your limits</h5>
+                    <h4>New gym apparel</h4>
+                    <h5>Look good, feel good</h5>
                 </div>
                 <div class="card">
                     <img src="../assets/img/box3-2x.jpg" alt="service6">
-                    <h4>Crossfit workout</h4>
-                    <h5>Push your limits</h5>
+                    <h4>Team training</h4>
+                    <h5>Find a partner</h5>
                 </div>
             </div>
-
             <div class="qoute1">
                 <h1>"How you respond to the challenge in the second half will determine what you become after the game,
                     wheter you are a winner or a loser."</h1>
@@ -77,7 +77,7 @@ export default {
             </div>
         </div>
     </section>
-
+    <!-- ONLINE ADVICE SECTION -->
     <section class="online_advice">
         <div class="row">
 
@@ -94,8 +94,8 @@ export default {
                     channel</button>
             </div>
         </div>
-
     </section>
+    <!-- PLAYLIST SECTION -->
     <section class="playlist">
         <div class="container">
             <div class="text d-flex justify-content-between mb-2 pt-5">
@@ -122,11 +122,10 @@ export default {
                     <h6>Thighs & glute workout</h6>
                     <p>Increase your mobility</p>
                 </div>
-
             </div>
-
         </div>
     </section>
+    <!-- MAIL LIST SECTION -->
     <section class=" mailing_list">
         <div class="container">
             <div class="row">
@@ -139,10 +138,10 @@ export default {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates eius ipsum temporibus.
                         Qui delectus, fugiat quaerat sunt molestias facilis cumque distinctio hic?</p>
                 </div>
-
             </div>
         </div>
     </section>
+    <!-- OPTIONS SECTION -->
     <section class="options">
         <div class="container">
             <div class="row option_cards gap-5">
@@ -173,6 +172,7 @@ export default {
             </div>
         </div>
     </section>
+    <!-- LASTEST ARTICLES SECTION -->
     <section class="articles">
         <div class="container">
             <div class="d-flex justify-content-between mb-2 pt-5">
@@ -198,6 +198,7 @@ export default {
             </div>
         </div>
     </section>
+    <!-- CALL TO ACTION SECTION -->
     <section class="call_to_action">
         <div class="content">
             <h1>"I've failed over and over again in my life. And that is why I succeed."</h1>
@@ -207,12 +208,11 @@ export default {
                 neque
                 earum cum repellat perferendis quaerat? Necessitatibus dolorem porro iusto officiis.</p>
             <button class="mt-2 call_to_act">Buy Avada today <i class=" ps-2 fa-solid fa-angle-right"></i></button>
-
         </div>
     </section>
+    <!-- SPONSORS LIST SECTION -->
     <section class="sponsors">
         <div class="container">
-
             <div class="row sponsor_cards pt-5">
                 <div class="col-3 sponsor_card">
                     <img src="../assets/img/sponsor-1-2x.png" alt="">
@@ -245,34 +245,32 @@ export default {
             </div>
         </div>
     </section>
+    <!-- WORKOUT OF THE DAY SECTION -->
     <section class="workout_of_the_day">
         <div class="wrapper">
-
             <button class="play_btn3"><i class="fa-solid fa-play"></i></button>
             <h1>Crossfit workout of the day</h1>
             <h2>November 15th, 2019</h2>
             <h6>View all videos<i class="ps-2 fa-solid fa-arrow-right"></i></h6>
         </div>
-
     </section>
 </template>
 
 
-
+<!-- ***************************************************************** -->
 
 <style scoped lang="scss">
+/* JUMBOTRON SECTION STYLES */
 .jumbotron {
     height: 35rem;
     margin-bottom: 5rem;
     /* width: 100vw */
-
     background-image: linear-gradient(to left, transparent, transparent, #0000007a, black, black, black), url(../assets/img/slider82x-scaled.jpg);
     background-size: cover;
     position: relative;
 
 }
 
-/* JUMBTRON SECTION STYLE */
 .jumbo_left {
     margin: 5rem 0;
 
@@ -287,8 +285,6 @@ export default {
         font-size: 1.3rem;
     }
 
-
-
     p {
         padding: 1rem 0;
         color: grey;
@@ -297,7 +293,6 @@ export default {
 
     img {
         width: 5rem;
-
     }
 
     .visit_yt_btn {
@@ -347,7 +342,6 @@ export default {
         }
     }
 
-
     .prebuilts,
     .buy_now {
         width: 4rem;
@@ -373,8 +367,6 @@ export default {
         top: 12rem;
     }
 }
-
-
 
 
 
@@ -418,11 +410,9 @@ export default {
                 border-radius: 5px 5px 40px 0;
             }
 
-
-
-
             h4 {
                 color: white;
+                font-weight: bold;
                 position: absolute;
                 bottom: 3rem;
                 padding-left: 2rem;
@@ -430,16 +420,14 @@ export default {
             }
 
             h5 {
+                font-weight: bold;
                 color: yellow;
                 position: absolute;
                 bottom: 1rem;
                 padding-left: 2rem;
                 z-index: 1;
-
             }
-
         }
-
     }
 
     .qoute1 {
@@ -463,19 +451,15 @@ export default {
                 padding: 0.5rem;
                 color: rgb(197, 197, 197);
             }
-
-
         }
     }
-
 
 }
 
 
 
-
+/* ONLINE ADVICE SECTION STYLES */
 .online_advice {
-
     background-color: white;
     height: 40rem;
     position: relative;
@@ -505,13 +489,10 @@ export default {
             &:hover {
                 color: #FF414B;
             }
-
         }
-
     }
 
     .text-wrapper {
-
         padding: 6rem;
 
         h2 {
@@ -524,7 +505,6 @@ export default {
             color: #4154ff;
             font-size: 1.5rem;
             margin-bottom: 2rem;
-
         }
 
         p {
@@ -546,15 +526,14 @@ export default {
             }
         }
     }
-
 }
 
 
+/* PLAYLIST SECTION STYLES */
 .playlist {
     height: 40rem;
     padding-top: 5rem;
     background-color: white;
-
 
     .vid_cards {
         margin-bottom: 2rem;
@@ -565,8 +544,6 @@ export default {
         text-align: center;
         line-height: 0.8rem;
         position: relative;
-
-
 
         img {
             width: 100%;
@@ -600,9 +577,9 @@ export default {
             font-size: 0.95rem;
         }
     }
-
 }
 
+/* MAIL LIST SECTION STYLES */
 .mailing_list {
     height: 45rem;
     /* width: 100vw; */
@@ -612,10 +589,8 @@ export default {
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 4rem;
-
 }
 
-/* JUMBTRON SECTION STYLE */
 .mail_today {
     margin: 5rem 0;
 
@@ -630,8 +605,6 @@ export default {
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
-
-
 
     p {
         padding: 1rem 0;
@@ -660,10 +633,10 @@ export default {
         margin-right: 1.5rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-
     }
 }
 
+/* OPTONS SECTION STYLES */
 .options {
     height: 40rem;
 
@@ -695,7 +668,6 @@ export default {
                 color: yellow;
                 font-size: 1.5rem;
                 margin-bottom: 4rem;
-
             }
 
             h5 {
@@ -715,6 +687,7 @@ export default {
     }
 }
 
+/* LASTEST ARTICLES SECTION STYLES */
 .articles {
     background-color: white;
     color: black;
@@ -743,12 +716,12 @@ export default {
                 color: gray;
             }
 
-
         }
     }
 }
 
 
+/* CALL TO ACTION SECTION STYLES */
 .call_to_action {
     height: 40rem;
     /* width: 100%; */
@@ -788,14 +761,13 @@ export default {
 
 }
 
+/* SPONSOR LIST SECTION STYLES */
 .sponsors {
     height: 30rem;
     background-color: white;
     padding: 2rem 0;
 
     .sponsor_cards {
-
-
         .sponsor_card {
             padding: 2rem;
             text-align: center;
@@ -813,6 +785,7 @@ export default {
     }
 }
 
+/* WORKOUT OF THE DAY SECTION STYLES */
 .workout_of_the_day {
     height: 35rem;
     background-image: linear-gradient(to bottom right, rgba(0, 13, 128, 0.329), rgba(2, 2, 95, 0.479), rgba(255, 0, 0, 0.308)), url(../assets/img/banner14-2x.jpg);
@@ -823,13 +796,11 @@ export default {
     text-align: center;
 
     .wrapper {
-
         padding: 7rem;
 
         h1 {
             color: white;
             font-size: 3rem;
-
         }
 
         h2 {
@@ -858,9 +829,7 @@ export default {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%); */
-
         }
     }
-
 }
 </style>

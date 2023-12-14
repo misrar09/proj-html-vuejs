@@ -43,6 +43,7 @@ export default {
     </div>
 </template>
 
+
 <style scoped lang="scss">
 // importo variabili
 // @use './styles/partials/variables' as *;
@@ -53,7 +54,6 @@ export default {
     gap: 5rem;
 
 }
-
 
 .navbar {
 

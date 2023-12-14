@@ -5,7 +5,7 @@ import register from "../debug" //per debuggare il componente da console
 export default {
     name: "AppFooter",
     props: {
-        postsLinkList: Array,
+        postsLinkList: Array, /* DATA FROM APP.VUE */
     },
     data() {
         return {
@@ -47,18 +47,14 @@ export default {
                         <a href="postLink.link">{{ postLink.text }}</a>
                     </li>
                 </ul>
-
-
             </div>
             <div class="col text-center">
                 <h6>CONTACT INFORMATION</h6>
                 <p class="pt-4"> 4746 Tipple Road Michigan 48448</p>
-                <h6 class="pt-2">Mobile: 1.800.000.0000</h6>
-                <h6>Email: info@your-company.com</h6>
+                <h6 class="pt-2 fs-5">Mobile: 1.800.000.0000</h6>
+                <h6 class="fs-5">Email: info@your-company.com</h6>
             </div>
-
         </div>
-
     </div>
     <hr>
     <div class=" sec_2 text-center">
@@ -69,10 +65,12 @@ export default {
     </div>
 </template>
 
+
 <style scoped lang="scss">
 // importo variabili
 // @use './styles/partials/variables' as *;
 
+//UPPER FOOTER SECTION
 .sec_1 {
     height: 20rem;
     margin: 8rem;
@@ -88,8 +86,6 @@ export default {
         color: white;
     }
 
-    ul {}
-
     a,
     li {
         text-decoration: none;
@@ -103,7 +99,7 @@ export default {
     }
 }
 
-
+//LOWER FOOTER SECTION
 .sec_2 {
     margin: 2rem 0;
     color: gray;
