@@ -56,14 +56,12 @@ export default {
 }
 
 .navbar {
-
     i {
         color: gray;
 
         &:hover {
             color: white;
         }
-
     }
 
     a {

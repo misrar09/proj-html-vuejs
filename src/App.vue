@@ -2,9 +2,6 @@
 import AppMain from "./components/AppMain.vue"
 import AppFooter from "./components/AppFooter.vue"
 import AppHeader from "./components/AppHeader.vue"
-
-
-
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
 
